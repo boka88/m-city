@@ -35,7 +35,7 @@ class AddEditMatch extends Component {
                 element: 'select',
                 value: '',
                 config: {
-                    label: 'Select a  local team',
+                    label: 'Select a local team',
                     name: 'select_local',
                     type: 'select',
                     options: []

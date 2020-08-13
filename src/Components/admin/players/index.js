@@ -52,12 +52,12 @@ class AdminPlayers extends Component {
                                     this.state.players.map((player,i)=>(
                                         <TableRow key={i}>
                                             <TableCell>
-                                               <Link to={`/admin_players/add+players/${player.id}`}>
+                                               <Link to={`/admin_players/add_players/${player.id}`}>
                                                    {player.name}
                                                </Link>
                                             </TableCell>
                                             <TableCell>
-                                                <Link to={`/admin_players/add+players/${player.id}`}>
+                                                <Link to={`/admin_players/add_players/${player.id}`}>
                                                    {player.lastname}
                                                </Link>
                                             </TableCell>
@@ -82,7 +82,6 @@ class AdminPlayers extends Component {
                     {this.state.isloading ?
                             <CircularProgress thickness={7} style={{color: '#98c5e9'}}/>
                         :''
-
                     }
                 </div>
 
