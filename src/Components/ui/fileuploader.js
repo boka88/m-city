@@ -78,10 +78,7 @@ class Fileuploader extends Component {
                             onUploadError={ this.handleUploadError }
                             onUploadSuccess={ this.handleUploadSuccess }
                         />
-
-
                     </div>
-
                     : null
                 }
                 { this.state.isUploading ?
@@ -95,7 +92,6 @@ class Fileuploader extends Component {
 
                     </div>
                 :null
-
                 }
                 { this.state.fileURL ?
                     <div className='image_upload_container'>

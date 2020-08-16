@@ -7,6 +7,8 @@ import PublicRoute from './Components/authRoutes/publicRoutes'
 
 import Home from './Components/home'
 import SignIn from './Components/signin'
+import TheTeam from './Components/theTeam'
+import TheMatches from './Components/theMatches'
 
 import Dashboard from './Components/admin/Dashboard'
 import AdminMatches from './Components/admin/matches'
@@ -14,7 +16,7 @@ import AddEditMatch from './Components/admin/matches/addEditMatch'
 import AdminPlayers from './Components/admin/players'
 import AddEditPlayers from './Components/admin/players/addEditPlayers'
 
-// Stao na 59 stao na 06:48
+// Stao na 62 stao na 11:01 izgleda mora sve ponovo, ne radi kako treba 
 const Routes = (props) => {
 
   return (
@@ -29,7 +31,10 @@ const Routes = (props) => {
         <PrivateRoute {...props} path='/admin_matches' exact component={AdminMatches}/>
         <PrivateRoute {...props} path='/dashboard' exact component={Dashboard}/>
         <PublicRoute  {...props} restricted={true} path='/sign_in' exact component={SignIn}/>
+        <PublicRoute  {...props} restricted={false} path='/the_matches' exact component={TheMatches}/>
+        <PublicRoute  {...props} restricted={false} path='/the_team' exact component={TheTeam}/>
         <PublicRoute  {...props} restricted={false} path='/' exact component={Home}/>
+
      </Switch>
     </Layout>
   )

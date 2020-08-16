@@ -134,8 +134,7 @@ class AddEditMatch extends Component {
                         {key:'W',value:'W'},
                         {key:'L',value:'L'},
                         {key:'D',value:'D'},
-                        {key:'n/a',value:'n/a'},
-                       
+                        {key:'n/a',value:'n/a'}     
                     ]
                 },
                 validation: {
@@ -238,7 +237,6 @@ class AddEditMatch extends Component {
              .then((snapshot)=>{
                  const match = snapshot.val()
                  getTeams(match, 'Edit Match')
-
              })
         }
     }
@@ -416,8 +414,6 @@ class AddEditMatch extends Component {
                 </div>
 
                
-
-
 
 
             </AdminLayout>
